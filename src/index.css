@@ -1,0 +1,277 @@
+.MainContainer {
+  max-width: 770px;
+  margin: auto;
+  height: 800px;
+}
+
+.Alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.ErrorAlert {
+  width: 400px;
+  margin-left: 195px;
+}
+.Alert p {
+  display: inline;
+  margin-left: 10px;
+}
+.SpanBtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.SpanBtn:hover {
+  color: black;
+}
+.ButtonContainer {
+  display: inline;
+}
+
+.ImageButton {
+  width: 11px;
+}
+.ButtonMainContainer {
+  width: 300px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.Buttons:hover img {
+  color: white;
+  background-color: white;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.11s;
+  -moz-transition-duration: 0.2s;
+}
+.Buttons:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.11s;
+  -moz-transition-duration: 0.2s;
+}
+.AddButton:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+.AddButton {
+  cursor: pointer;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 260px;
+  margin-top: 20px;
+  margin-left: 67px;
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+.Buttons {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  width: 79px;
+  font-family: helvetica;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  background-color: white;
+  padding: 10px 30px;
+}
+input[type="text"] {
+  padding: 0;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+}
+
+.TypingBox {
+  width: 400px;
+  margin-left: 195px;
+  margin-top: 20px;
+  margin-right: -4px;
+}
+
+.container {
+  height: auto;
+  width: 600px;
+  margin-top: 20px;
+  display: flex;
+  margin-left: 20px;
+}
+
+.card {
+  display: flex;
+  height: 100px;
+  width: 108px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: dimgrey;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  top: 60px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  margin-left: 35px;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+.inline {
+  width: 50%;
+  display: inline-block;
+}
+
+.inline p {
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: 900;
+}
+@media only screen and (max-width: 768px) {
+  .inline {
+    width: 100%;
+    display: block;
+  }
+
+  .inline p {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 900;
+  }
+  .TypingBox {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 260px;
+  }
+  .ButtonMainContainer {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  .container {
+    width: auto;
+  }
+  .AddButton {
+    margin-left: 48px;
+  }
+  .ErrorAlert {
+    width: auto;
+    margin-left: 0px;
+  }
+  .loader {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .loaderAnimation {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .inline p {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 124px;
+  cursor: pointer;
+  height: 125px;
+}
+.loaderAnimation {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 124px;
+  cursor: pointer;
+  height: 125px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
